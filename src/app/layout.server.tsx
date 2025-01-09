@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Excello",
+  title: "Excello Solutions",
   description: "Excello application",
 };
 

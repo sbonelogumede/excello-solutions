@@ -5,12 +5,6 @@ export default function Appy() {
     <>
       <Head>
         <title>Apply_Now</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <div className="content-wrapper">

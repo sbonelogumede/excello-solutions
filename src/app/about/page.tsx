@@ -6,12 +6,6 @@ export default function About() {
     <>
       <Head>
         <title>About_Us</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <div className="content-wrapper">

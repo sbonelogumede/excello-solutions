@@ -1,6 +1,7 @@
 "use client";
 
 import "./globals.css";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -32,9 +33,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
             <ul className="hidden md:flex space-x-6">
               <li>
-                <a href="/" className="hover:text-blue-400">
+                <Link href="/" className="hover:text-blue-400">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="/apply" className="hover:text-blue-400">
