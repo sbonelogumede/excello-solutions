@@ -1,101 +1,91 @@
+import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Head>
+        <title>Homepage</title>
+      </Head>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <div>
+        <header>
+          <h1>Excello Solutions</h1>
+          <hr />
+          <h2>Educational Consultant/Tutor</h2>
+          <hr />
+        </header>
+
+        <main>
+          <section>
+            <h3>Summary</h3>
+            <p>
+              We are a dynamic education consulting firm dedicated to bridging
+              the gap between students and the working industry. Our mission is
+              to provide personalized tutoring and guidance to high school and
+              college students, empowering them to achieve academic excellence
+              and successfully transition into their chosen careers.
+            </p>
+          </section>
+
+          <section>
+            <h3>Our Services</h3>
+            <ul>
+              <li>National Benchmark Test (NBT) Tutoring Sessions</li>
+              <li>College Tutoring Sessions</li>
+              <li>Central Applications Office (CAO) Applications</li>
+              <li>
+                National Student Financial Aid Scheme (NSFAS) Applications
+              </li>
+              <li>Corporate Bursary Applications</li>
+              <li>Curriculum Vitae (CV) Assistance</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Pricing</h3>
+            <h4>National Benchmark Test (NBT) Tutoring</h4>
+            <p>MAT R950</p>
+            <p>AQL & AL R950</p>
+
+            <h4>College Tutoring</h4>
+            <p>R650 per module per month</p>
+
+            <h4>Applications</h4>
+            <p>University Applications: R250</p>
+            <p>Bursary Applications: R250</p>
+            <p>Combo of Varsity & Bursary Applications: R400</p>
+          </section>
+          <section>
+            <h3>Testimonials</h3>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <div className="testimonials" style={{ marginRight: "20px" }}>
+                <Image
+                  src="/images/Testimonial.jpg"
+                  alt="Testimonial image"
+                  width={400}
+                  height={400}
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div>
+                <p>
+                  "I'm thrilled to share my incredible journey with Excello
+                  Solutions! With their guidance and support, I transformed from
+                  a struggling student on the verge of failing my course to
+                  achieving an outstanding 6 Distinctions! Their expertise and
+                  mentorship helped me overcome my academic challenges, build
+                  confidence, and unlock my full potential. I'm forever grateful
+                  for the impact they've had on my educational journey! If
+                  you're struggling in college, I highly recommend Excello
+                  Solutions. They truly care about your success and will empower
+                  you to achieve your goals!" ~ Mr L.Godide
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </>
   );
 }
